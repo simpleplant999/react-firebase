@@ -15,20 +15,6 @@ import { useEffect } from "react";
 import { Profile } from "./views/profile/Profile";
 
 function App() {
-  const [user] = useAuthState(auth);
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    console.log(user);
-  }, []);
-  // useEffect(() => {
-  //   if (user) {
-  //     navigate("/");
-  //   } else {
-  //     navigate("/login");
-  //   }
-  // }, [user]);
-
   return (
     <div className="App">
       <Navbar />
